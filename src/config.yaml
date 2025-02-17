@@ -1,0 +1,20 @@
+# data path 
+train_path: data/train_data.json
+dev_path: data/dev_data.json
+test_path: data/test_data.json
+
+# bert
+plm: roberta
+bert_dir: ./plm/chinese-roberta-wwm-ext/
+
+# parameter 
+epoch_size: 20
+batchsize: 16
+patience: 15
+max_grad_norm: 1.0
+warmup_proportion: 0.1
+gradient_accumulation_steps: 1
+adam_epsilon: 1e-8
+warmup_steps: 0
+# 有些经验法则建议将 weight_decay 设置为学习率的 1/10 到 1/100
+
